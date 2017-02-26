@@ -1,7 +1,7 @@
 {
   "name": "twilightsparkle-ui",
   "theme": "ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A dark UI theme for Atom inspired by My little Pony Twilightsparkle. The colors that are used are dark blue, pink, purple and a nice green.",
   "license": "MIT",
   "repository": "https://github.com/nerdbabe/twilightsparkle-ui",
