@@ -1,78 +1,127 @@
-// Colors
+// Twilightsparkle Colors
+
+@blue: #35a6ff;
+@medium-blue: #0098ff;
+@darker-blue: #2a8af5;
+@dark-blue: #112668;
+@very-dark-blue: #121a26;
+@darkest-blue: #0d141f;
+@turquoise: #0cc;
+@light-turquoise: #5bffd3;
+@light-green: #00f2a5;
+@medium-green: #19e68c;
+@green: #2aff8e;
+@red: #ff2c81;
+@malve: #f335ff;
+@raspberry: #db2ff4;
+@pink: #ff00bf;
+@purple: #a576ff;
+@medium-purple: #ae81ff;
+@dark-purple: #5a197f;
+@light-purple: #aeb3ff;
+@grey-purple: #847cb2;
+@violet: #985cbe;
+@light-violet: #d291eb;
+
+// Theme colors
 
 @text-color: #aaa;
-@text-color-subtle: #555;
+@text-color-subtle: #aaa;
 @text-color-highlight: #fff;
 @text-color-selected: @text-color-highlight;
 
-@text-color-info: #5293d8;
-@text-color-success: #2BDA77;
-@text-color-warning: #ff982d;
-@text-color-error: #c00;
+@text-color-info: @medium-blue;
+@text-color-success: @light-green;
+@text-color-warning: @pink;
+@text-color-error: @red;
 
 @text-color-ignored: @text-color-subtle;
 @text-color-added: @text-color-success;
 @text-color-renamed: @text-color-info;
 @text-color-modified: @text-color-warning;
-@text-color-removed: @text-color-error;
+@text-color-removed: @light-purple;
 
 @background-color-info: #0098ff;
-@background-color-success: #17ca65;
-@background-color-warning: #ffaa2c;
-@background-color-error: #c00;
+@background-color-success: @light-green;
+@background-color-warning: @pink;
+@background-color-error: @red;
 @background-color-highlight: rgba(255, 255, 255, 0.07);
-@background-color-selected: #4182C4;
+@background-color-selected: @light-purple;
 
-@app-background-color: #333;
+@app-background-color: @very-dark-blue;
 
-@base-background-color: lighten(@tool-panel-background-color, 5%);
+@base-background-color: @very-dark-blue;
 @base-border-color: rgba(0, 0, 0, 0.5);
 
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color: rgba(0, 0, 0, 0.5);
 
-@input-background-color: #212224;
+@input-background-color: @darkest-blue;
 @input-border-color: @base-border-color;
 
-@tool-panel-background-color: #1d1f21;
+@tool-panel-background-color:@darkest-blue;
 @tool-panel-border-color: @base-border-color;
 
-@inset-panel-background-color: #161719;
+@inset-panel-background-color: @very-dark-blue;
 @inset-panel-border-color: @base-border-color;
 
-@panel-heading-background-color: #43484d;
+@panel-heading-background-color: @darkest-blue;
 @panel-heading-border-color: fadein(@base-border-color, 10%);
 
-@overlay-background-color: #202123;
+@overlay-background-color: @very-dark-blue;
 @overlay-border-color: @background-color-highlight;
 
-@button-background-color: #43484d;
-@button-background-color-hover: lighten(@button-background-color, 5%);
-@button-background-color-selected: #5c6064;
+@button-background-color: @malve;
+@button-background-color-hover: darken(@button-background-color, 20%);
+@button-background-color-selected: darken(@button-background-color, 20%);
 @button-border-color: @base-border-color;
 
-@tab-bar-background-color: #222;
+@tab-bar-background-color: @very-dark-blue;
 @tab-bar-border-color: darken(@tab-background-color-active, 10%);
-@tab-background-color: #333;
-@tab-background-color-active: #222;
-@tab-border-color: #484848;
+@tab-background-color: @very-dark-blue;
+@tab-background-color-active: @purple;
+@tab-border-color: @dark-blue;
 
-@tree-view-background-color: #303030;
+@tip-background-color: @grey-purple;
+@tip-text-color: @very-dark-blue;
+
+@tree-view-background-color: @very-dark-blue;
 @tree-view-border-color: @tool-panel-border-color;
+@tree-view-selected-bg: lighten(@darkest-blue, 10%);
 
-@scrollbar-background-color: #222425; // Needs to be opaque -> atom/atom/issues/4578
+@scrollbar-background-color: @darkest-blue; // Needs to be opaque -> atom/atom/issues/4578
 @scrollbar-color: rgba(92, 92, 92, 0.5);
 
-@ui-site-color-1: @background-color-success; // green
-@ui-site-color-2: @background-color-info; // blue
-@ui-site-color-3: @background-color-warning; // orange
-@ui-site-color-4: #db2ff4; // purple
-@ui-site-color-5: #f5e11d; // yellow
+@ui-site-color-1: @background-color-success;
+@ui-site-color-2: @background-color-info;
+@ui-site-color-3: @malve;
+@ui-site-color-4: @turquoise;
+@ui-site-color-5: @purple;
 
+// Colors for autocomplete
+@syntax-color-attribute: @blue;
+@syntax-color-keyword: @pink;
+@syntax-color-class: @malve;
+@syntax-color-constant: @purple;
+@syntax-color-function: @turquoise;
+@syntax-color-import: @medium-green;
+@syntax-color-keyword: @medium-purple;
+@syntax-color-method: @medium-blue;
+@syntax-color-import: @violet;
+@syntax-color-class: @light-turquoise;
+@syntax-color-import: @light-violet;
+@syntax-color-property: @darker-blue;
+@syntax-color-import: @dark-purple;
+@syntax-color-snippet: @green;
+@syntax-color-tag: @grey-purple;
+@syntax-color-class: @red;
+@syntax-color-value: @raspberry;
+@syntax-color-variable: @light-green;
+@syntax-color-attribute: @light-purple;
 
 // Sizes
 
-@font-size: 11px;
+@font-size: 12px;
 @input-font-size: 14px;
 
 @disclosure-arrow-size: 12px;
@@ -84,7 +133,6 @@
 @component-border-radius: 2px;
 
 @tab-height: 26px;
-
 
 // Other
 

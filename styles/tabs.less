@@ -40,13 +40,13 @@
     line-height: @tab-height;
     padding: 0;
     margin: 0 20px 0 5px;
-    color: @text-color;
+    color: @light-green;
 
     transition: color .1s ease-in;
     border: none;
 
     &, &:before, &:after {
-      background-image: -webkit-linear-gradient(top, lighten(#333, 7%), #333);
+      background-image: -webkit-linear-gradient(top, lighten(@darkest-blue, 7%), @darkest-blue);
       height: @tab-height;
     }
 
@@ -117,7 +117,7 @@
     }
 
     &, &:before, &:after {
-      background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 7%), @tab-background-color-active);
+      background-image: -webkit-linear-gradient(top, darken(@tab-background-color-active, 5%), @tab-background-color-active);
       height: @tab-height + 1px;
     }
 

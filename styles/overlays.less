@@ -2,7 +2,7 @@ atom-panel.modal, .overlay {
   color: @text-color;
   background-color: @overlay-background-color;
   padding: @component-padding;
-  border: 1px solid @overlay-border-color;
+  border: 2px solid @overlay-border-color;
   box-shadow: 0 0 10px @base-border-color;
   border-radius: @component-border-radius;
 
@@ -12,7 +12,6 @@ atom-panel.modal, .overlay {
 
   .select-list ol.list-group,
   &.select-list ol.list-group {
-
     background-color: lighten(@overlay-background-color, 3%);
 
     li {
@@ -24,6 +23,7 @@ atom-panel.modal, .overlay {
       .status.icon {
         float: right;
         margin-left: @component-icon-padding;
+
         &:before {
           margin-right: 0;
         }

@@ -46,7 +46,8 @@
 .select-list ol.list-group,
 &.select-list ol.list-group {
   li.two-lines {
-    .secondary-line { color: @text-color-subtle; }
+    .secondary-line { color: @text-color; }
+
     &.selected .secondary-line {
       color: @text-color;
       text-shadow: none;
@@ -56,7 +57,7 @@
   // We want to highlight the background of the list items because we dont
   // know their size.
   li.selected {
-    background-color: @background-color-selected;
+    background-color: lighten(@darkest-blue, 10%);
     &:before{ display: none; }
   }
 
@@ -82,7 +83,7 @@
       .octicon(check, @active-icon-size);
       &:before {
         margin-right: @component-icon-padding;
-        color: @text-color-success;
+        color: lighten(@pane-item-background-color, 10%);
       }
     }
   }

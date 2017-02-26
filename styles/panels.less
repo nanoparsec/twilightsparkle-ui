@@ -7,8 +7,21 @@
   }
 }
 
+.panels-menu {
+  li {
+    a.icon {
+      color: @text-color;
+    }
+  }
+}
+
+.settings-view select.form-control {
+  color: @text-color;
+}
+
 atom-panel, .tool-panel {
   .text(normal);
+  
   position: relative;
 
   background-color: @tool-panel-background-color;
@@ -58,4 +71,10 @@ atom-panel, .tool-panel {
     @text: lighten(@text-color, 10%);
     .btn-background(@bg, @hover, @selected, @text);
   }
+}
+
+.title-bar {
+  background-color: @darkest-blue;
+  border-bottom: none;
+  color: @grey-purple;
 }
