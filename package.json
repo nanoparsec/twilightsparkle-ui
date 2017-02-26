@@ -6,6 +6,6 @@
   "license": "MIT",
   "repository": "https://github.com/nerdbabe/twilightsparkle-ui",
   "engines": {
-    "atom": ">1.14.3"
+    "atom": ">1.14.0"
   }
 }
